@@ -1,4 +1,4 @@
-import Header from '@/Components/Header/Header';
+import Header from '@/Components/header/Header';
 
 export default function Inicio() {
   return (
