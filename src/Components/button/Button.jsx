@@ -1,8 +1,8 @@
-export default function Button({ children }) {
+export default function Button({ children }, props) {
   return (
     <button
-      type="button"
-      class="text-white bg-gradient-to-r 
+      type={props.type}
+      className="text-white bg-gradient-to-r 
       from-blue-500 
       via-blue-600 
       to-blue-700 

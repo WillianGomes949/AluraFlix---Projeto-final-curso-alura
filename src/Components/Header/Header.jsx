@@ -12,7 +12,7 @@ export default function Header() {
             <Menulink to="/">Inicio</Menulink>
           </Button>
           <Button>
-            <Menulink to="/novoVideo">Novo video</Menulink>
+            <Menulink to="/novoVideo">Novo Video</Menulink>
           </Button>
         </nav>
       </div>
