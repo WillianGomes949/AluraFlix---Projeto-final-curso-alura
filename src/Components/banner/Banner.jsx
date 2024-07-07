@@ -1,8 +1,8 @@
 import Button from '../button/Button';
 export default function Banner() {
   return (
-    <section className="flex m-auto w-4/5 justify-betwee my-10">
-      <div className="w-3/6">
+    <section className="flex flex-wrap m-auto w-4/5 justify-between my-10">
+      <div className="w-3/6 text-justify">
         <Button>Front End</Button>
         <h1 className="font-black">Seo com react</h1>
         <p>
@@ -12,8 +12,8 @@ export default function Banner() {
           asperiores dolorum?
         </p>
       </div>
-      <div className="w-3/6">
-        <h1>video</h1>
+      <div className="w-3/6 flex justify-center">
+        <h1 className="rounded w-96 h-60 bg-gray-500">video</h1>
       </div>
     </section>
   );

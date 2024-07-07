@@ -14,65 +14,71 @@ export default function Formulario() {
           Criar Card
         </h2>
         <form className="flex flex-col gap-2">
-          <div>
-            <label for="titulo" className="mt-1 text-gray-200 mr-4">
-              Titulo
-            </label>
-            <input
-              className="rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
-              type="text"
-              name="titulo"
-              id="titulo"
-              placeholder="Digite o titulo"
-            />
-            <label for="categoria" className="mt-1 text-gray-200 mr-4">
-              Categoria
-            </label>
-            <select
-              name="categoria"
-              id="categoria"
-              className=" rounded-md p-1 bg-gray-700 text-gray-200"
-            >
-              <option value="backEnd">Back End</option>
-              <option value="frontEnd">Front End</option>
-              <option value="mobile">Mobile</option>
-            </select>
+          <div className="flex justify-between">
+            <div className="w-2/5">
+              <label for="titulo" className="mt-1 text-gray-200 mr-4">
+                Titulo
+              </label>
+              <input
+                className="w-full rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
+                type="text"
+                name="titulo"
+                id="titulo"
+                placeholder="Digite o titulo"
+              />
+            </div>
+            <div className="w-2/5">
+              <label for="categoria" className="mt-1 text-gray-200 mr-4">
+                Categoria
+              </label>
+              <select
+                className="w-full rounded-md p-1 bg-gray-700 text-gray-200 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
+                name="categoria"
+                id="categoria"
+              >
+                <option value="backEnd">Back End</option>
+                <option value="frontEnd">Front End</option>
+                <option value="mobile">Mobile</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <label for="imagem" className="mt-1 text-gray-200 mr-4">
-              Imagem
-            </label>
-            <input
-              className=" rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600 required required:border-red-500"
-              type="text"
-              name="imagem"
-              id="imagem"
-              placeholder="O link e obrigatorio"
-            />
-            <label for="videoLink" className="mt-1 text-gray-200 mr-4">
-              Video
-            </label>
-            <input
-              className=" rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
-              type="text"
-              name="videoLink"
-              id="videoLink"
-              placeholder="Digite o link do video"
-            />
+
+          <div className="flex justify-between">
+            <div className="w-2/5">
+              <label for="imagem" className="mt-1 text-gray-200 mr-4">
+                Imagem
+              </label>
+              <input
+                className="w-full rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600 required required:border-red-500"
+                type="text"
+                name="imagem"
+                id="imagem"
+                placeholder="O link e obrigatorio"
+              />
+            </div>
+            <div className="w-2/5">
+              <label for="videoLink" className="mt-1 text-gray-200 mr-4">
+                Video
+              </label>
+              <input
+                className="w-full rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
+                type="text"
+                name="videoLink"
+                id="videoLink"
+                placeholder="Digite o link do video"
+              />
+            </div>
           </div>
-          <div>
-            <label for="descricao" className="mt-1 text-gray-200 mr-4">
-              Descricao
-            </label>
-            <br />
-            <textarea
-              className="w-full rounded-md p-1 bg-gray-700 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
-              name="descricao"
-              id="descricao"
-              placeholder="Sobre o que e esse video?"
-              rows={10}
-            ></textarea>
-          </div>
+          <label for="descricao" className="mt-1 text-gray-200 mr-4">
+            Descricao
+          </label>
+          <textarea
+            className="w-full rounded-md p-1 bg-gray-700 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
+            name="descricao"
+            id="descricao"
+            placeholder="Sobre o que e esse video?"
+            rows={8}
+          ></textarea>
           <div>
             <Button>Guardar</Button>
             <Button>Limpar</Button>
