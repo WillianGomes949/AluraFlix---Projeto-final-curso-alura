@@ -1,3 +1,5 @@
+import Button from '../button/Button';
+
 export default function Formulario() {
   return (
     <div className="bg-gray-800  flex justify-center p-4">
@@ -8,28 +10,28 @@ export default function Formulario() {
             Complete o formulario para criar um novo card
           </p>
         </div>
-        <h2 className="flex h-12 text-left font-semibold text-gray-200 border-t-2 border-b-2 border-gray-200 items-center mb-3">
+        <h2 className="flex h-12 text-left font-semibold text-gray-200 border-t-2 border-b-2 border-blue-500 items-center mb-3">
           Criar Card
         </h2>
-        <form>
+        <form className="flex flex-col gap-2">
           <div>
-            <label for="titulo" className="mt-1">
+            <label for="titulo" className="mt-1 text-gray-200 mr-4">
               Titulo
             </label>
             <input
-              className="border border-gray-200 rounded-md p-1 bg-gray-700"
+              className="rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
               type="text"
               name="titulo"
               id="titulo"
-              placeholder="digite o titulo"
+              placeholder="Digite o titulo"
             />
-            <label for="categoria" className="mt-1">
+            <label for="categoria" className="mt-1 text-gray-200 mr-4">
               Categoria
             </label>
             <select
               name="categoria"
               id="categoria"
-              className="border border-gray-200 rounded-md p-1 bg-gray-700 text-gray-200"
+              className=" rounded-md p-1 bg-gray-700 text-gray-200"
             >
               <option value="backEnd">Back End</option>
               <option value="frontEnd">Front End</option>
@@ -37,39 +39,44 @@ export default function Formulario() {
             </select>
           </div>
           <div>
-            <label for="imagem" className="mt-1">
+            <label for="imagem" className="mt-1 text-gray-200 mr-4">
               Imagem
             </label>
             <input
-              className="border border-gray-200 rounded-md p-1 bg-gray-700"
+              className=" rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600 required required:border-red-500"
               type="text"
               name="imagem"
               id="imagem"
-              placeholder="o link e obrigatorio"
+              placeholder="O link e obrigatorio"
             />
-            <label for="videoLink" className="mt-1">
+            <label for="videoLink" className="mt-1 text-gray-200 mr-4">
               Video
             </label>
             <input
-              className="border border-gray-200 rounded-md p-1 bg-gray-700"
+              className=" rounded-md p-1 bg-gray-700 mr-4 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
               type="text"
               name="videoLink"
               id="videoLink"
-              placeholder="digite o link do video"
+              placeholder="Digite o link do video"
             />
           </div>
-
-          <label for="descricao" className="mt-1">
-            Descricao
-          </label>
-          <br />
-          <textarea
-            className="w-full border border-gray-200 rounded-md p-1 bg-gray-700 text-gray-200"
-            name="descricao"
-            id="descricao"
-            placeholder="sobre o que e esse video?"
-            rows={10}
-          ></textarea>
+          <div>
+            <label for="descricao" className="mt-1 text-gray-200 mr-4">
+              Descricao
+            </label>
+            <br />
+            <textarea
+              className="w-full rounded-md p-1 bg-gray-700 text-gray-400 focus:ring-offset-2 focus:ring-4 focus:ring-blue-600"
+              name="descricao"
+              id="descricao"
+              placeholder="Sobre o que e esse video?"
+              rows={10}
+            ></textarea>
+          </div>
+          <div>
+            <Button>Guardar</Button>
+            <Button>Limpar</Button>
+          </div>
         </form>
       </section>
     </div>
