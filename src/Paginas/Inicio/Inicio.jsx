@@ -9,8 +9,6 @@ export default function Inicio() {
       <Header />
       <Banner />
       <SectionVideos />
-      <SectionVideos />
-      <SectionVideos />
       <Footer />
     </>
   );
