@@ -1,5 +1,5 @@
-import Inicio from '@/paginas/inicio/Inicio';
-import NovoVideo from '@/paginas/novoVideo/NovoVideo';
+import Inicio from '../paginas/inicio/Inicio';
+import NovoVideo from '../paginas/novoVideo/NovoVideo';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function AppRoutes() {
