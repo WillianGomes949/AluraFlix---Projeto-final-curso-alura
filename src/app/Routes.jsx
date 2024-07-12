@@ -1,5 +1,4 @@
 import Inicio from '@/paginas/inicio/Inicio';
-import NotFound from '@/paginas/notfound/NotFound';
 import NovoVideo from '@/paginas/novoVideo/NovoVideo';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -10,7 +9,6 @@ export default function AppRoutes() {
         <Route>
           <Route path="/" element={<Inicio />} />
           <Route path="/novoVideo" element={<NovoVideo />} />
-          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
