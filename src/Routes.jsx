@@ -7,8 +7,8 @@ export default function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route>
-          <Route path="/Inicio" element={<Inicio />} />
-          <Route path="/NovoVideo" element={<NovoVideo />} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/novoVideo" element={<NovoVideo />} />
         </Route>
       </Routes>
     </BrowserRouter>

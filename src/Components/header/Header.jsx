@@ -9,10 +9,10 @@ export default function Header() {
         <Image src="/logoMain.png" width={100} height={100} alt="logo" />
         <nav className="space-x-2">
           <Button>
-            <Menulink to="/Inicio">Inicio</Menulink>
+            <Menulink to="/">Inicio</Menulink>
           </Button>
           <Button>
-            <Menulink to="/NovoVideo">Novo Video</Menulink>
+            <Menulink to="/novoVideo">Novo Video</Menulink>
           </Button>
         </nav>
       </div>
