@@ -1,15 +1,15 @@
 import Button from '../button/Button';
-import CarrosselVideo from '../carroselVideo/CarrosselVideo';
+import CardVideo from '../carroselVideo/CardVideo';
 
-export default function SectionVideos() {
+export default function SectionVideos(props) {
   return (
     <div className="w-4/5 m-auto">
-      <Button>FrontEnd</Button>
+      <Button>{props.area}</Button>
       <section className="flex">
-        <CarrosselVideo />
-        <CarrosselVideo />
-        <CarrosselVideo />
-        <CarrosselVideo />
+        <CardVideo video="bicicleta" />
+        <CardVideo video="carro" />
+        <CardVideo video="voar" />
+        <CardVideo video="correr" />
       </section>
     </div>
   );
