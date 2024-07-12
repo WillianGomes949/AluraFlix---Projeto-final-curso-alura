@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Inicio from './pages/Inicio';
+import Inicio from './pages/inicio/Inicio';
 import NovoVideo from './pages/NovoVideo';
 
 export default function AppRoutes() {
@@ -7,7 +7,7 @@ export default function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/novoVideo" element={<NovoVideo />} />
+        <Route path="/index" element={<NovoVideo />} />
       </Routes>
     </BrowserRouter>
   );
